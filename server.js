@@ -22,7 +22,8 @@ app.use(express.urlencoded({ extended: true }));
 
 // This is an async function
 app.get("/", async (req, reply) => {
-  await reply.status(200).render("index");
+  //await reply.status(200).render("index");
+  await reply.render(path.join(__dirname + '/views/index'))
 });
 
 app.use(async (req, res, next) => {
