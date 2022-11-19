@@ -2,5 +2,5 @@
   "public": true,
   "trailingSlash": false,
   "cleanUrls": true,
-  "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }]
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
